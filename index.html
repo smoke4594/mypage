@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+    * {
+      font-family: 'Gowun Dodum', sans-serif;
+    }
+
+    .제목 {
+      background-color: blue;
+      color: aliceblue;
+
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn.vox-cdn.com/thumbor/UehyoNzYoIR5ZJDrvHjDAZhmkaI=/0x0:1920x1080/1400x933/filters:focal(1030x331:1336x637):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/65632309/jbareham_191158_ply0958_decade_lolengends.0.jpg');
+      background-position: center;
+      background-size: cover;
+    }
+
+    .제목>button {
+      width: 250px;
+      height: 50px;
+      background-color: transparent;
+
+      border: 1px solid white;
+      color: white;
+      border-radius: 50px;
+      margin-top: 5px;
+    }
+
+    .제목>button:hover {
+      border: 2px solid white;
+    }
+
+    .mycomment {
+      color: red;
+    }
+
+    .mycards {
+      width: 1200px;
+      margin: 20px auto 20px auto;
+    }
+    .mypost {
+
+      width:  500px;
+      margin: 20px auto 20px auto;
+      padding: 20px 20px 20px 20px;
+      box-shadow:  0px 0px 3px 0px gray;
+    }
+    .mybtn {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .mybtn > button{
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="제목">
+    <h1>
+      프리미엄 상점
+    </h1>
+    <button>
+      구매 하러가기
+    </button>
+  </div>
+  <div class="mypost">
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">구매 신청</label>
+    </div>
+    <div class="form-floating">
+      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+      <label for="floatingTextarea">내용</label>
+    </div>
+    <div class="mybtn">
+      <button type="button" class="btn btn-dark">구매 신청</button>
+      <button type="button" class="btn btn-outline-dark">닫기</button>
+    </div>
+  </div>
+  <div class="mycards">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://cdn.moogold.com/2020/10/league-of-legends-gift-card-kr.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">한정판 스킨권 5,000원</h5>
+            <p class="card-text">초특가의 저렴한 구성</p>
+            <p>⭐⭐⭐</p>
+            <p class="mycomment">5,000 KRW</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://cdn.moogold.com/2020/10/league-of-legends-gift-card-kr.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">한정판 스킨권 10,000원</h5>
+            <p class="card-text">저렴한 구성</p>
+            <p>⭐⭐⭐</p>
+            <p class="mycomment">10,000 KRW</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://cdn.moogold.com/2020/10/league-of-legends-gift-card-kr.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">한정판 스킨권 30,000원</h5>
+            <p class="card-text">한정판 구성</p>
+            <p>⭐⭐⭐</p>
+            <p class="mycomment">30,000 KRW</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://cdn.moogold.com/2020/10/league-of-legends-gift-card-kr.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">한정판 스킨권 50,000원</h5>
+            <p class="card-text">프리미엄 스킨권</p>
+            <p>⭐⭐⭐</p>
+            <p class="mycomment">50,000 KRW</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
