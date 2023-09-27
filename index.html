@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIF Display</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/345599178078811.64e2103aecc89.gif') center/cover no-repeat;
+            overflow: hidden; /* 이미지가 화면 밖으로 나가지 않게 함 */
+        }
+    </style>
 </head>
 <body>
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/345599178078811.64e2103aecc89.gif" alt="GIF Image">
+    <!-- 이미지를 CSS background 속성으로 설정했기 때문에 별도의 img 태그는 필요하지 않습니다. -->
 </body>
 </html>
